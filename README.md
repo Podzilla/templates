@@ -112,7 +112,7 @@
 
 ---
 
-## Logging Standards
+## Logging Standards ( Optional )
 
 ### 14. Log Levels ( Optional )
 - `DEBUG`: Detailed diagnostic information.
@@ -120,7 +120,7 @@
 - `WARN`: Non-critical issues (e.g., "Stock running low").
 - `ERROR`: Critical issues requiring immediate attention.
 
-### 15. Tools
+### 15. Tools ( Optional )
 - Use **SLF4J** with **Logback** for consistent logging.
 - Avoid logging sensitive information (e.g., passwords, PII).
 
