@@ -3,17 +3,9 @@ name: Docker Build & Push
 on:
   workflow_call:
     inputs:
-      branch:
-        required: true
-        type: string
       artifact-name:
         required: true
         type: string
-    secrets:
-      DOCKERHUB_USERNAME:
-        required: true
-      DOCKERHUB_PASSWORD:
-        required: true
 
 jobs:
   docker-build-and-push:

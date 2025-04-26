@@ -7,10 +7,12 @@
 name: Lint Code Base
 
 on:
-  push:
-    branches: [ "dev", "main" ]
-  pull_request:
-    branches: [ "**" ]
+  workflow_call:
+    inputs:
+      branch: # This is the branch that the code will be compared against (ex: 'dev')
+        required: true
+        type: string
+
 jobs:
   run-lint:
     runs-on: ubuntu-latest
@@ -25,5 +27,5 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: "dev"
+          DEFAULT_BRANCH: ${{ inputs.branch }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
