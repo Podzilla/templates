@@ -23,6 +23,14 @@ jobs:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 0
 
+      - name: Download linters config from template repo
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/Podzilla/templates.git temp-template
+          cd temp-template
+          git sparse-checkout set .github/linters
+          mkdir -p $GITHUB_WORKSPACE/.github
+          cp -r .github/linters $GITHUB_WORKSPACE/.github/linters
+
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
