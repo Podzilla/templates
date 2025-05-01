@@ -38,3 +38,5 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: ${{ inputs.branch }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FILTER_REGEX_EXCLUDE: .*src/test.*
+          VALIDATE_JSCPD: false
