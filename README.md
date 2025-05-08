@@ -5,12 +5,14 @@
 ## How to use 
     1. copy files RabbitMQConfig.java , RabbitMqDeclarator and RabbitMqPublisher in folder mq (copy them in the same package)
     2. add the following to dependecy and see this for detailed steps https://github.com/Podzilla/mq-utils-lib/blob/main/README.md
-   ```
-        <dependency>
-<groupId>com.podzilla</groupId>
-<artifactId>mq-utils-lib</artifactId>
-<version>1.0.0</version>
-</dependency>
+
+```xml
+       <dependency>
+			<groupId>com.github.Podzilla</groupId>
+			<artifactId>mq-utils-lib</artifactId>
+			<version>main-SNAPSHOT</version>
+		</dependency>
+
 ```
 
     3. in RabbitMQConfig use the add the events in PRODUCE_EVENTS and CONSUME_EVENTS
