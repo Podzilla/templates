@@ -4,7 +4,7 @@
 
 ## How to use
 
-1.  Copy the files `RabbitMQConfig.java`, `RabbitMqDeclarator.java`, and `RabbitMqPublisher.java` into a folder named `mq` within your project's package structure. Ensure they are in the same Java package.
+1.  Copy the files `RabbitMQConfig.java`, `RabbitMqDeclarator.java`, and `RabbitMqPublisher.java` into a folder within your service. Ensure they are in the same Java package.
 
 2.  Add the following dependency to your `pom.xml`. For more detailed steps, refer to the library's README: [https://github.com/Podzilla/mq-utils-lib/blob/main/README.md](https://github.com/Podzilla/mq-utils-lib/blob/main/README.md)
 
